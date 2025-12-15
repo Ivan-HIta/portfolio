@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Enable typed imports for src aliases. The corresponding path mapping is
-  // defined in tsconfig.json under "paths". This makes importing modules
-  // cleaner: e.g. import Navbar from "@/components/Navbar".
+  // Habilita el directorio app (routing basado en archivos) que se utiliza en
+  // esta plantilla. Si agregas más directorios o aliases, ajusta tsconfig.json
   experimental: {
     appDir: true
   }

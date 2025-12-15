@@ -3,24 +3,23 @@
 import { useEffect, useMemo, useState } from 'react';
 
 /*
- * Navbar implements a sticky navigation bar with scroll‑spy. It observes
- * each section of the page and highlights the current anchor link as the
- * user scrolls. On small screens it collapses into a hamburger menu.
+ * Navbar implementa una barra de navegación fija con scroll‑spy. Observa
+ * cada sección de la página y resalta el enlace correspondiente al
+ * desplazarse. En pantallas pequeñas se colapsa a un menú hamburguesa.
  */
 
 const sections = [
-  { id: 'home', label: 'Home' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'about', label: 'About' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'work', label: 'Work' },
-  { id: 'certifications', label: 'Certifications' }
+  { id: 'home', label: 'Inicio' },
+  { id: 'services', label: 'Servicios' },
+  { id: 'about', label: 'Sobre mí' },
+  { id: 'skills', label: 'Habilidades' },
+  { id: 'work', label: 'Proyectos' },
+  { id: 'certifications', label: 'Certificaciones' }
 ];
 
 export default function Navbar() {
   const [active, setActive] = useState('home');
   const [open, setOpen] = useState(false);
-
   const ids = useMemo(() => sections.map((s) => s.id), []);
 
   useEffect(() => {
@@ -41,16 +40,18 @@ export default function Navbar() {
   }, [ids]);
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-zinc-950/60">
+    <header className="sticky top-0 z-40 backdrop-blur border-b border-white/10 bg-zinc-950/60">
       <div className="mx-auto w-[min(1100px,92%)] py-3 flex items-center gap-4">
-        <a href="#home" className="font-bold tracking-tight">
-          <span className="text-indigo-400">●</span> Portfolio
+        <a href="#home" className="font-bold tracking-tight flex items-center gap-1">
+          <span className="text-accent">●</span>
+          <span>Portfolio</span>
         </a>
 
         <button
           className="ml-auto md:hidden px-3 py-2 rounded-xl border border-white/10"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
+          aria-label="Toggle navigation"
         >
           ☰
         </button>
@@ -63,10 +64,8 @@ export default function Navbar() {
               key={s.id}
               href={`#${s.id}`}
               onClick={() => setOpen(false)}
-              className={`text-sm font-semibold transition ${
-                active === s.id
-                  ? 'text-white'
-                  : 'text-zinc-400 hover:text-zinc-200'
+              className={`text-sm font-semibold transition py-1 ${
+                active === s.id ? 'text-white' : 'text-zinc-400 hover:text-zinc-200'
               }`}
             >
               {s.label}

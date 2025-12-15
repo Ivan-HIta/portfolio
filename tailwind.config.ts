@@ -1,18 +1,23 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
-// Tailwind configuration enables dark mode and scans the app and component
-// directories for class names. It uses a very lightweight extend section
-// because additional styles are handled directly in the components. When you
-// add new components or pages, ensure their paths are listed in the `content`
-// array so Tailwind can tree‑shake unused styles.
+// Tailwind configuration. Activamos el modo oscuro controlado por
+// clases y registramos los directorios a escanear. Extendemos la paleta
+// con un color de acento para uniformidad en botones y enlaces. Si
+// deseas utilizar otro color principal, basta con cambiar los valores
+// aquí. Los componentes emplean estas variables a través de las
+// clases de Tailwind.
 const config: Config = {
-  darkMode: "class",
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
-  ],
+  darkMode: 'class',
+  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './data/**/*.{ts,js}'],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        accent: {
+          DEFAULT: '#4F46E5',
+          hover: '#6366F1'
+        }
+      }
+    }
   },
   plugins: []
 };

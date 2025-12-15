@@ -1,11 +1,12 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 /*
- * Motion helpers based on Framer Motion. These small components wrap
- * common animations used throughout the portfolio. They ensure
- * consistent timing and easing while keeping the markup clean.
+ * Motion helpers basados en Framer Motion. Estos pequeños componentes
+ * envuelven animaciones comunes para mantener una coherencia visual y
+ * evitar repetir lógica en cada componente. Puedes ajustar la duración y
+ * la curvatura de las transiciones aquí para cambiar el feeling global.
  */
 
 export const FadeUp = ({
@@ -43,9 +44,34 @@ export const Item = ({ children }: { children: React.ReactNode }) => (
   <motion.div
     variants={{
       hidden: { opacity: 0, y: 14 },
-      show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: 'easeOut' } }
+      show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.45, ease: 'easeOut' }
+      }
     }}
   >
     {children}
   </motion.div>
 );
+
+/**
+ * ScrollProgress es un componente opcional que muestra una barra de
+ * progreso en la parte superior indicando el avance de la página. Se
+ * apoya en useScroll y useSpring de framer-motion para animar
+ * suavemente el ancho de la barra en función del scroll.
+ */
+export function ScrollProgress() {
+  const { scrollYProgress } = useScroll();
+  const width = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+  return (
+    <motion.div
+      className="fixed top-0 left-0 h-1 bg-accent z-50"
+      style={{ scaleX: width, transformOrigin: '0%' }}
+    />
+  );
+}

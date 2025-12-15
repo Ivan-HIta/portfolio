@@ -8,10 +8,8 @@ import Certifications from '@/components/Certifications';
 import Footer from '@/components/Footer';
 
 /*
- * The main page pulls together all of the sections of the portfolio. Each
- * section is implemented as a separate component to keep things
- * modular and readable. When adding new sections, import them here and
- * insert them into the markup below.
+ * Página principal que reúne todas las secciones del portfolio. Cada
+ * sección es un componente separado para mantener el código modular.
  */
 export default function Page() {
   return (
@@ -24,8 +22,8 @@ export default function Page() {
         <Skills />
         <Work />
         <Certifications />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
