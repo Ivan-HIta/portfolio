@@ -4,8 +4,12 @@ export const profile = {
    * footer y metadata. Ajusta el texto para reflejar tu marca personal.
    */
   name: "Iván Moisés Hita Cahuantzi",
+  // Professional headline oriented to an international audience.  It should
+  // communicate that you design and build production‑grade AI/ML systems,
+  // rather than just performing analytics.  Use English here to appeal
+  // to global recruiters.
   headline:
-    "Líder en Ciencia de Datos y Riesgo Crediticio | ML Avanzado & Ingeniería de Datos | Banca y Retail",
+    "Applied AI & Machine Learning Engineer | Building production‑grade ML systems in finance & risk",
   roles: [
     "Data Science Coordinator (El Puerto de Liverpool)",
     "Senior Data Scientist (Citibanamex)",
@@ -25,19 +29,19 @@ export const profile = {
    */
   services: [
     {
-      title: "Modelado de Riesgo Crediticio",
+      title: "AI & ML Engineering",
       desc:
-        "Diseño y despliegue de modelos predictivos (Logistic, XGBoost, MLP) que incrementan aprobaciones y reducen morosidad."
+        "Designing, training and deploying predictive models (Logistic, XGBoost, Deep Learning) with scalable feature stores and serving infrastructure."
     },
     {
-      title: "Ingeniería de Datos & Nube",
+      title: "Data & Cloud Pipelines",
       desc:
-        "Construcción de pipelines de datos en Spark, PySpark, Ab Initio y orquestación en GCP/AWS para procesos de riesgo y analítica."
+        "Building robust data pipelines on Spark, PySpark and Ab Initio; orchestrating workflows on GCP/AWS for analytics and real‑time decisioning."
     },
     {
-      title: "NLP & Modelos Generativos",
+      title: "NLP & Generative Models",
       desc:
-        "Aplicación de Transformers y modelos híbridos (LLM+MLP) para analítica de texto, sentiment analysis y detección de fraude."
+        "Applying transformer‑based models and hybrid architectures (LLM + MLP) for text analytics, sentiment analysis and fraud detection."
     }
   ],
 
@@ -46,14 +50,32 @@ export const profile = {
    * resuman tus fortalezas. Estos textos se pueden ampliar o ajustar.
    */
   about: {
+    // Lead paragraph updated to emphasise end‑to‑end system design, MLOps
+    // and the ability to translate business problems into engineered AI/ML
+    // solutions.  Written in English to appeal to international recruiters.
     lead:
-      "Científico de datos con experiencia liderando equipos multidisciplinarios y desarrollando modelos de riesgo, fraude y segmentación en banca y retail. Especialista en pipelines de Big Data y en traducir las necesidades del negocio en soluciones de IA de alto impacto.",
+      "AI/ML engineer and applied researcher with a proven track record leading multidisciplinary teams and designing production‑grade models for risk, fraud and customer segmentation.  I specialise in building end‑to‑end data pipelines and translating complex business problems into scalable AI solutions.",
     bullets: [
-      "Conducción de proyectos de modelado de riesgo: logistic regression con Elastic Net, XGBoost, MLP y GA",
-      "Implementación de pipelines en Big Data: Spark, PySpark, Ab Initio, GCP y AWS",
-      "Integración de modelos generativos y NLP para detección de fraude y análisis de sentimientos"
+      // Highlights emphasise system design, cloud and MLOps skills
+      "Lead design and deployment of risk models using logistic regression, XGBoost and neural networks with advanced feature engineering",
+      "Built and operated large‑scale data pipelines using Spark, PySpark, Ab Initio, GCP and AWS",
+      "Integrated LLMs and NLP techniques into fraud detection and sentiment analysis systems in production"
     ]
   },
+
+  /**
+   * My approach to building machine learning systems.  These bullets
+   * communicate engineering maturity and philosophy, showing recruiters
+   * that you treat models as software and optimise for scalability,
+   * maintainability and compliance.  The `approach` property is used
+   * in the Approach section of the homepage.
+   */
+  approach: [
+    "Design ML systems end‑to‑end: data ingestion, feature engineering, modelling, serving and monitoring",
+    "Optimise for latency, scalability and maintainability – not just AUC or KS",
+    "Treat models as software artefacts: versioned, tested and observable",
+    "Balance performance with explainability, regulatory constraints and customer impact"
+  ],
 
   /**
    * Skills listados como chips. Agrega o elimina según tus competencias. Se

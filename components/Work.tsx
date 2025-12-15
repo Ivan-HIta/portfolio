@@ -9,7 +9,7 @@ import { Item, Stagger } from './Motion';
  */
 export default function Work() {
   return (
-    <Section id="work" title="Proyectos">
+    <Section id="work" title="Work">
       <Stagger>
         <div className="grid md:grid-cols-3 gap-4">
           {profile.work.map((w) => (
@@ -33,7 +33,7 @@ export default function Work() {
                     className="underline text-sm font-bold hover:text-white"
                     href={`/work/${w.slug}`}
                   >
-                    Ver caso
+                    View case
                   </a>
                 </div>
               </div>

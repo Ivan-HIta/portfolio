@@ -9,12 +9,13 @@ import { useEffect, useMemo, useState } from 'react';
  */
 
 const sections = [
-  { id: 'home', label: 'Inicio' },
-  { id: 'services', label: 'Servicios' },
-  { id: 'about', label: 'Sobre mí' },
-  { id: 'skills', label: 'Habilidades' },
-  { id: 'work', label: 'Proyectos' },
-  { id: 'certifications', label: 'Certificaciones' }
+  { id: 'home', label: 'Home' },
+  { id: 'services', label: 'Services' },
+  { id: 'about', label: 'About' },
+  { id: 'approach', label: 'Approach' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'work', label: 'Work' },
+  { id: 'certifications', label: 'Certifications' }
 ];
 
 export default function Navbar() {
@@ -71,6 +72,14 @@ export default function Navbar() {
               {s.label}
             </a>
           ))}
+          {/* External link to the blog page */}
+          <a
+            href="/blog"
+            onClick={() => setOpen(false)}
+            className="text-sm font-semibold transition py-1 text-zinc-400 hover:text-zinc-200"
+          >
+            Blog
+          </a>
         </nav>
       </div>
     </header>

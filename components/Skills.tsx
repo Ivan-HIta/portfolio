@@ -8,7 +8,7 @@ import { Item, Stagger } from './Motion';
  */
 export default function Skills() {
   return (
-    <Section id="skills" title="Habilidades" subtitle="Tecnologías y técnicas que domino">
+    <Section id="skills" title="Skills" subtitle="Key tools and technologies">
       <Stagger>
         <div className="flex flex-wrap gap-2">
           {profile.skills.map((s) => (

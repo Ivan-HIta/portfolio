@@ -8,7 +8,7 @@ import { Item, Stagger } from './Motion';
  */
 export default function Services() {
   return (
-    <Section id="services" title="Servicios">
+    <Section id="services" title="Services">
       <Stagger>
         <div className="grid md:grid-cols-3 gap-4">
           {profile.services.map((s) => (

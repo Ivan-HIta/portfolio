@@ -8,7 +8,7 @@ import { Item, Stagger } from './Motion';
  */
 export default function Certifications() {
   return (
-    <Section id="certifications" title="Certificaciones">
+    <Section id="certifications" title="Certifications">
       <Stagger>
         <div className="grid md:grid-cols-2 gap-4">
           {profile.certifications.map((c) => (

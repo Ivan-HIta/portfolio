@@ -8,7 +8,7 @@ import { FadeUp } from './Motion';
  */
 export default function About() {
   return (
-    <Section id="about" title="Sobre mí">
+    <Section id="about" title="About">
       <div className="grid md:grid-cols-[1.2fr_.8fr] gap-4">
         <FadeUp>
           <p className="text-zinc-300 leading-relaxed whitespace-pre-line">{profile.about.lead}</p>
