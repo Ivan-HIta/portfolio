@@ -18,9 +18,12 @@
     "lucide-react": "^0.289.0"
   },
   "devDependencies": {
+    "typescript": "5.2.2",
     "eslint": "8.56.0",
     "eslint-config-next": "14.0.4",
-    "typescript": "5.2.2",
-    "prettier": "3.0.3"
+    "prettier": "3.0.3",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19"
   }
 }
