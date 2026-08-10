@@ -118,7 +118,37 @@ export const projects: Project[] = [
       "Entrenamiento de un modelo BETO (BERT en español) para clasificación de sentimientos (positivo, neutro, negativo) y detección de promesas de pago.",
       "Integración con variables estructuradas (saldo pendiente, días de atraso, segmento socioeconómico) para alimentar un modelo secundario de predicción de pago.",
       "Implementación de pipeline MLOps en AWS con retraining mensual, marco champion–challenger y monitoreo de drift de vocabulario.",
-
+      "Iteración continua: incorporación de embeddings contextuales cuando se detectó deterioro de AUC en 2025."
+    ],
+    results: [
+      "AUC ≈ 0.90, recall 80–85 % y precision 25–30 % (frente a 0.80/60 %/10 % del sistema basado en reglas).",
+      "Reducción de falsos negativos en 50 % y detección de ~40 % más pagos potenciales.",
+      "Ahorro significativo en costos de cobranza y mejora de la experiencia del cliente."
+    ],
+    stack: ["BETO", "Transformers", "PyTorch", "AWS", "MLOps"]
+  },
+  {
+    slug: "deteccion-fraude-llm-mlp",
+    title: "Detección de Fraude en Transferencias con LLM + MLP",
+    summary:
+      "Modelo híbrido que combina embeddings de lenguaje y atributos tabulares para anticipar fraudes en transacciones.",
+    context:
+      "El banco experimentaba un incremento de fraudes en transferencias y bloqueos erróneos de cuentas. Se requería mejorar la detección temprana sin afectar la experiencia de clientes legítimos.",
+    actions: [
+      "Consolidación de datos transaccionales y contextuales (motivo de transferencia, descripciones) y etiquetado de casos de fraude/no fraude.",
+      "Extracción de embeddings semánticos a partir de descripciones de transferencias con modelos LLM en español.",
+      "Diseño de una red MLP para combinar embeddings de texto con atributos tabulares (monto, frecuencia, geolocalización, historial de usuario).",
+      "Selección de características relevantes y entrenamiento del modelo híbrido con regularización y técnicas de oversampling para clases desbalanceadas.",
+      "Implementación de pipelines MLOps en AWS SageMaker, con API de inferencia de baja latencia (<300 ms) y dashboards de métricas."
+    ],
+    results: [
+      "Recall ≈ 96.2 %, precision ≈ 84.1 % y AUC ≈ 0.991, superando al modelo tabular en 1.7 puntos de recall y reduciendo falsos positivos en 15 %.",
+      "Reducción de pérdidas por fraude en ~50 % (~4.5 M MXN/año) y mejora significativa en la experiencia de clientes.",
+      "Capacitación del equipo y establecimiento de mejores prácticas de MLOps y compliance."
+    ],
+    stack: ["Transformers", "PyTorch", "MLP", "AWS", "MLOps"]
+  },
+[
   {
     "slug": "ai-model-validation-governance-toolkit",
     "title": "AI Model Validation & Governance Toolkit",
@@ -234,36 +264,5 @@ export const projects: Project[] = [
       "Scenario Engine"
     ]
   }
-
-,
-      "Iteración continua: incorporación de embeddings contextuales cuando se detectó deterioro de AUC en 2025."
-    ],
-    results: [
-      "AUC ≈ 0.90, recall 80–85 % y precision 25–30 % (frente a 0.80/60 %/10 % del sistema basado en reglas).",
-      "Reducción de falsos negativos en 50 % y detección de ~40 % más pagos potenciales.",
-      "Ahorro significativo en costos de cobranza y mejora de la experiencia del cliente."
-    ],
-    stack: ["BETO", "Transformers", "PyTorch", "AWS", "MLOps"]
-  },
-  {
-    slug: "deteccion-fraude-llm-mlp",
-    title: "Detección de Fraude en Transferencias con LLM + MLP",
-    summary:
-      "Modelo híbrido que combina embeddings de lenguaje y atributos tabulares para anticipar fraudes en transacciones.",
-    context:
-      "El banco experimentaba un incremento de fraudes en transferencias y bloqueos erróneos de cuentas. Se requería mejorar la detección temprana sin afectar la experiencia de clientes legítimos.",
-    actions: [
-      "Consolidación de datos transaccionales y contextuales (motivo de transferencia, descripciones) y etiquetado de casos de fraude/no fraude.",
-      "Extracción de embeddings semánticos a partir de descripciones de transferencias con modelos LLM en español.",
-      "Diseño de una red MLP para combinar embeddings de texto con atributos tabulares (monto, frecuencia, geolocalización, historial de usuario).",
-      "Selección de características relevantes y entrenamiento del modelo híbrido con regularización y técnicas de oversampling para clases desbalanceadas.",
-      "Implementación de pipelines MLOps en AWS SageMaker, con API de inferencia de baja latencia (<300 ms) y dashboards de métricas."
-    ],
-    results: [
-      "Recall ≈ 96.2 %, precision ≈ 84.1 % y AUC ≈ 0.991, superando al modelo tabular en 1.7 puntos de recall y reduciendo falsos positivos en 15 %.",
-      "Reducción de pérdidas por fraude en ~50 % (~4.5 M MXN/año) y mejora significativa en la experiencia de clientes.",
-      "Capacitación del equipo y establecimiento de mejores prácticas de MLOps y compliance."
-    ],
-    stack: ["Transformers", "PyTorch", "MLP", "AWS", "MLOps"]
-  }
+]
 ];
