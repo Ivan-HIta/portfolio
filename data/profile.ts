@@ -9,7 +9,7 @@ export const profile = {
   // rather than just performing analytics.  Use English here to appeal
   // to global recruiters.
   headline:
-    "Applied AI & Machine Learning Engineer | Building production‑grade ML systems in finance & risk",
+    "Senior Data & ML Engineer | PySpark - GCP - AWS - BigQuery - MLOps",
   roles: [
     "Data Science Coordinator (El Puerto de Liverpool)",
     "Senior Data Scientist (Citibanamex)",
@@ -29,9 +29,9 @@ export const profile = {
    */
   services: [
     {
-      title: "AI & ML Engineering",
+      title: "Data & ML Engineering",
       desc:
-        "Designing, training and deploying predictive models (Logistic, XGBoost, Deep Learning) with scalable feature stores and serving infrastructure."
+        "Building production-grade data and ML systems with PySpark, Spark SQL, feature engineering, model validation, serving and monitoring."
     },
     {
       title: "Data & Cloud Pipelines",
@@ -39,9 +39,9 @@ export const profile = {
         "Building robust data pipelines on Spark, PySpark and Ab Initio; orchestrating workflows on GCP/AWS for analytics and real‑time decisioning."
     },
     {
-      title: "NLP & Generative Models",
+      title: "AI Engineering & RAG",
       desc:
-        "Applying transformer‑based models and hybrid architectures (LLM + MLP) for text analytics, sentiment analysis and fraud detection."
+        "Building evaluated RAG and NLP workflows with citations, guardrails, PII-aware controls and measurable latency/cost."
     }
   ],
 
@@ -166,7 +166,31 @@ export const profile = {
     "#ModelGovernance",
     "#LLMEvaluation",
     "#scikit-learn",
-    "#Streamlit"
+    "#Streamlit",
+    {
+      slug: "data-platform-observability",
+      title: "Data Platform Observability",
+      subtitle: "Incremental operational data platform with contracts, quality checks, curated analytics and production-ready observability",
+      tags: ["#DataEngineering", "#DataQuality", "#Observability", "#CloudArchitecture"],
+      links: { code: "https://github.com/Ivan-HIta/data-platform-observability", demo: "" },
+      flagship: true
+    },
+    {
+      slug: "financial-mlops-credit-risk",
+      title: "Financial MLOps Credit Risk Platform",
+      subtitle: "Governed credit-risk model lifecycle with reproducible training, API serving, drift monitoring and retraining controls",
+      tags: ["#MLOps", "#CreditRisk", "#FastAPI", "#ModelMonitoring"],
+      links: { code: "https://github.com/Ivan-HIta/financial-mlops-credit-risk", demo: "" },
+      flagship: true
+    },
+    {
+      slug: "secure-enterprise-rag",
+      title: "Secure Enterprise RAG",
+      subtitle: "Enterprise retrieval system with citations, retrieval evaluation, PII redaction, prompt-injection controls and audit telemetry",
+      tags: ["#RAG", "#LLMEvaluation", "#ResponsibleAI", "#Security"],
+      links: { code: "https://github.com/Ivan-HIta/secure-enterprise-rag", demo: "" },
+      flagship: true
+    }
   ],
   "links": {
     "code": "https://github.com/Ivan-HIta/ai-model-validation-governance-toolkit",
