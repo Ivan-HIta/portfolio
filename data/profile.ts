@@ -166,31 +166,7 @@ export const profile = {
     "#ModelGovernance",
     "#LLMEvaluation",
     "#scikit-learn",
-    "#Streamlit",
-    {
-      slug: "data-platform-observability",
-      title: "Data Platform Observability",
-      subtitle: "Incremental operational data platform with contracts, quality checks, curated analytics and production-ready observability",
-      tags: ["#DataEngineering", "#DataQuality", "#Observability", "#CloudArchitecture"],
-      links: { code: "https://github.com/Ivan-HIta/data-platform-observability", demo: "" },
-      flagship: true
-    },
-    {
-      slug: "financial-mlops-credit-risk",
-      title: "Financial MLOps Credit Risk Platform",
-      subtitle: "Governed credit-risk model lifecycle with reproducible training, API serving, drift monitoring and retraining controls",
-      tags: ["#MLOps", "#CreditRisk", "#FastAPI", "#ModelMonitoring"],
-      links: { code: "https://github.com/Ivan-HIta/financial-mlops-credit-risk", demo: "" },
-      flagship: true
-    },
-    {
-      slug: "secure-enterprise-rag",
-      title: "Secure Enterprise RAG",
-      subtitle: "Enterprise retrieval system with citations, retrieval evaluation, PII redaction, prompt-injection controls and audit telemetry",
-      tags: ["#RAG", "#LLMEvaluation", "#ResponsibleAI", "#Security"],
-      links: { code: "https://github.com/Ivan-HIta/secure-enterprise-rag", demo: "" },
-      flagship: true
-    }
+    "#Streamlit"
   ],
   "links": {
     "code": "https://github.com/Ivan-HIta/ai-model-validation-governance-toolkit",
@@ -241,7 +217,31 @@ export const profile = {
     "code": "https://github.com/Ivan-HIta/portfolio-risk-scenario-analytics",
     "demo": ""
   }
-}
+},
+    {
+      slug: "data-platform-observability",
+      title: "Data Platform Observability",
+      subtitle: "Incremental operational data platform with contracts, quality checks, curated analytics and production-ready observability",
+      tags: ["#DataEngineering", "#DataQuality", "#Observability", "#CloudArchitecture"],
+      links: { code: "https://github.com/Ivan-HIta/data-platform-observability", demo: "" },
+      flagship: true
+    },
+    {
+      slug: "financial-mlops-credit-risk",
+      title: "Financial MLOps Credit Risk Platform",
+      subtitle: "Governed credit-risk model lifecycle with reproducible training, API serving, drift monitoring and retraining controls",
+      tags: ["#MLOps", "#CreditRisk", "#FastAPI", "#ModelMonitoring"],
+      links: { code: "https://github.com/Ivan-HIta/financial-mlops-credit-risk", demo: "" },
+      flagship: true
+    },
+    {
+      slug: "secure-enterprise-rag",
+      title: "Secure Enterprise RAG",
+      subtitle: "Enterprise retrieval system with citations, retrieval evaluation, PII redaction, prompt-injection controls and audit telemetry",
+      tags: ["#RAG", "#LLMEvaluation", "#ResponsibleAI", "#Security"],
+      links: { code: "https://github.com/Ivan-HIta/secure-enterprise-rag", demo: "" },
+      flagship: true
+    }
   ],
 
   /**
