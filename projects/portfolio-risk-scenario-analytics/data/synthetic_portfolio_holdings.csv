@@ -1,0 +1,50 @@
+holding_id,portfolio_id,asset_id,asset_name,asset_class,sector,region,currency,quantity,price,market_value,weight
+HLD-0001,PORT-SYN-001,AST-0001,Synthetic Latin America Technology Equity 01,Equity,Technology,Latin America,MXN,10743.408,191.7677,2060238.62,2.060239
+HLD-0002,PORT-SYN-001,AST-0002,Synthetic Asia Pacific Financials Equity 02,Equity,Financials,Asia Pacific,JPY,16717.5703,178.2821,2980442.89,2.980443
+HLD-0003,PORT-SYN-001,AST-0003,Synthetic North America Healthcare Equity 03,Equity,Healthcare,North America,USD,14633.1346,119.9608,1755402.65,1.755403
+HLD-0004,PORT-SYN-001,AST-0004,Synthetic Europe Consumer Equity 04,Equity,Consumer,Europe,EUR,18804.6052,81.3487,1529729.44,1.529729
+HLD-0005,PORT-SYN-001,AST-0005,Synthetic Emerging Markets Energy Equity 05,Equity,Energy,Emerging Markets,BRL,76491.5923,43.0132,3290150.43,3.29015
+HLD-0006,PORT-SYN-001,AST-0006,Synthetic Latin America Industrials Equity 06,Equity,Industrials,Latin America,MXN,7571.6544,218.7673,1656430.56,1.656431
+HLD-0007,PORT-SYN-001,AST-0007,Synthetic Asia Pacific Utilities Equity 07,Equity,Utilities,Asia Pacific,JPY,19531.0306,121.3592,2370270.86,2.370271
+HLD-0008,PORT-SYN-001,AST-0008,Synthetic North America Technology Equity 08,Equity,Technology,North America,USD,32953.6654,66.1152,2178738.63,2.178739
+HLD-0009,PORT-SYN-001,AST-0009,Synthetic Europe Financials Equity 09,Equity,Financials,Europe,EUR,37067.1185,88.6985,3287799.44,3.287799
+HLD-0010,PORT-SYN-001,AST-0010,Synthetic Emerging Markets Healthcare Equity 10,Equity,Healthcare,Emerging Markets,BRL,8719.5686,148.2699,1292849.26,1.292849
+HLD-0011,PORT-SYN-001,AST-0011,Synthetic Latin America Consumer Equity 11,Equity,Consumer,Latin America,MXN,69663.6101,60.5365,4217188.81,4.217189
+HLD-0012,PORT-SYN-001,AST-0012,Synthetic Asia Pacific Energy Equity 12,Equity,Energy,Asia Pacific,JPY,4766.9961,208.7419,995071.88,0.995072
+HLD-0013,PORT-SYN-001,AST-0013,Synthetic North America Industrials Equity 13,Equity,Industrials,North America,USD,13353.3749,187.3573,2501851.7,2.501852
+HLD-0014,PORT-SYN-001,AST-0014,Synthetic Europe Utilities Equity 14,Equity,Utilities,Europe,EUR,12651.9347,178.8429,2262709.01,2.262709
+HLD-0015,PORT-SYN-001,AST-0015,Synthetic Emerging Markets Technology Equity 15,Equity,Technology,Emerging Markets,BRL,7781.4011,116.1963,904169.88,0.90417
+HLD-0016,PORT-SYN-001,AST-0016,Synthetic Latin America Financials Equity 16,Equity,Financials,Latin America,MXN,16874.2017,158.7533,2678835.67,2.678836
+HLD-0017,PORT-SYN-001,AST-0017,Synthetic Asia Pacific Healthcare Equity 17,Equity,Healthcare,Asia Pacific,JPY,9305.1492,149.3334,1389569.16,1.389569
+HLD-0018,PORT-SYN-001,AST-0018,Synthetic North America Consumer Equity 18,Equity,Consumer,North America,USD,3755.3396,163.6666,614623.51,0.614624
+HLD-0019,PORT-SYN-001,AST-0019,Synthetic Europe Energy Equity 19,Equity,Energy,Europe,EUR,73344.1726,40.4089,2963754.55,2.963755
+HLD-0020,PORT-SYN-001,AST-0020,Synthetic Emerging Markets Industrials Equity 20,Equity,Industrials,Emerging Markets,BRL,3321.6261,112.646,374167.94,0.374168
+HLD-0021,PORT-SYN-001,AST-0021,Synthetic Latin America Utilities Equity 21,Equity,Utilities,Latin America,MXN,24226.168,31.0719,752752.82,0.752753
+HLD-0022,PORT-SYN-001,AST-0022,Synthetic Asia Pacific Technology Equity 22,Equity,Technology,Asia Pacific,JPY,13395.4644,129.69,1737257.75,1.737258
+HLD-0023,PORT-SYN-001,AST-0023,Synthetic North America Financials Equity 23,Equity,Financials,North America,USD,34825.0901,93.9097,3270415.3,3.270415
+HLD-0024,PORT-SYN-001,AST-0024,Synthetic Europe Healthcare Equity 24,Equity,Healthcare,Europe,EUR,52654.0484,53.5063,2817321.9,2.817322
+HLD-0025,PORT-SYN-001,AST-0025,Synthetic Emerging Markets Consumer Equity 25,Equity,Consumer,Emerging Markets,BRL,45620.9137,44.5418,2032039.76,2.03204
+HLD-0026,PORT-SYN-001,AST-0026,Synthetic Latin America Energy Equity 26,Equity,Energy,Latin America,MXN,1539.577,150.1065,231100.55,0.231101
+HLD-0027,PORT-SYN-001,AST-0027,Synthetic Asia Pacific Industrials Equity 27,Equity,Industrials,Asia Pacific,JPY,16029.9447,59.1893,948800.68,0.948801
+HLD-0028,PORT-SYN-001,AST-0028,Synthetic North America Utilities Equity 28,Equity,Utilities,North America,USD,5259.1752,223.6762,1176352.26,1.176352
+HLD-0029,PORT-SYN-001,AST-0029,Synthetic Europe Technology Equity 29,Equity,Technology,Europe,EUR,3912.655,148.6713,581699.62,0.5817
+HLD-0030,PORT-SYN-001,AST-0030,Synthetic Emerging Markets Financials Equity 30,Equity,Financials,Emerging Markets,BRL,1518.8292,97.6176,148264.48,0.148264
+HLD-0031,PORT-SYN-001,AST-0031,Synthetic Latin America Healthcare Bond 31,Fixed Income,Healthcare,Latin America,MXN,33280.0484,103.273,3436929.03,3.436929
+HLD-0032,PORT-SYN-001,AST-0032,Synthetic Asia Pacific Consumer Bond 32,Fixed Income,Consumer,Asia Pacific,JPY,66155.3321,82.8209,5479046.75,5.479047
+HLD-0033,PORT-SYN-001,AST-0033,Synthetic North America Energy Bond 33,Fixed Income,Energy,North America,USD,17682.5074,116.5081,2060155.9,2.060156
+HLD-0034,PORT-SYN-001,AST-0034,Synthetic Europe Industrials Bond 34,Fixed Income,Industrials,Europe,EUR,61762.6932,99.3629,6136921.77,6.136922
+HLD-0035,PORT-SYN-001,AST-0035,Synthetic Emerging Markets Utilities Bond 35,Fixed Income,Utilities,Emerging Markets,BRL,5446.4239,110.1785,600078.64,0.600079
+HLD-0036,PORT-SYN-001,AST-0036,Synthetic Latin America Technology Bond 36,Fixed Income,Technology,Latin America,MXN,12063.8759,84.9783,1025167.43,1.025167
+HLD-0037,PORT-SYN-001,AST-0037,Synthetic Asia Pacific Financials Bond 37,Fixed Income,Financials,Asia Pacific,JPY,33893.3863,99.5197,3373059.63,3.37306
+HLD-0038,PORT-SYN-001,AST-0038,Synthetic North America Healthcare Bond 38,Fixed Income,Healthcare,North America,USD,18949.8047,99.6655,1888640.85,1.888641
+HLD-0039,PORT-SYN-001,AST-0039,Synthetic Europe Consumer Fund 39,ETF,Consumer,Europe,EUR,9361.239,293.524,2747748.42,2.747748
+HLD-0040,PORT-SYN-001,AST-0040,Synthetic Emerging Markets Energy Fund 40,ETF,Energy,Emerging Markets,BRL,12166.1744,196.5079,2390749.79,2.39075
+HLD-0041,PORT-SYN-001,AST-0041,Synthetic Latin America Industrials Fund 41,ETF,Industrials,Latin America,MXN,6387.4365,170.4747,1088896.26,1.088896
+HLD-0042,PORT-SYN-001,AST-0042,Synthetic Asia Pacific Utilities Fund 42,ETF,Utilities,Asia Pacific,JPY,3165.5313,115.7486,366405.66,0.366406
+HLD-0043,PORT-SYN-001,AST-0043,Synthetic North America Technology Fund 43,ETF,Technology,North America,USD,7276.2366,132.8658,966762.88,0.966763
+HLD-0044,PORT-SYN-001,AST-0044,Synthetic Europe Financials Fund 44,ETF,Financials,Europe,EUR,13331.8459,182.9782,2439436.99,2.439437
+HLD-0045,PORT-SYN-001,AST-0045,Synthetic Emerging Markets Cash Position 45,Cash,Healthcare,Emerging Markets,BRL,2943250.9912,1.0,2943250.99,2.943251
+HLD-0046,PORT-SYN-001,AST-0046,Synthetic Latin America Cash Position 46,Cash,Consumer,Latin America,MXN,1056749.0088,1.0,1056749.01,1.056749
+HLD-0047,PORT-SYN-001,AST-0047,Synthetic Asia Pacific Currency Position 47,FX,Energy,Asia Pacific,JPY,29851.0875,10.0208,299130.57,0.299131
+HLD-0048,PORT-SYN-001,AST-0048,Synthetic North America Currency Position 48,FX,Industrials,North America,USD,4100846.1855,1.1114,4557753.88,4.557754
+HLD-0049,PORT-SYN-001,AST-0049,Synthetic Europe Currency Position 49,FX,Utilities,Europe,EUR,117165.6323,18.2913,2143115.55,2.143111
