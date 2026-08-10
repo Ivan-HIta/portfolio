@@ -5,6 +5,7 @@
  * realizadas, resultados y la pila tecnológica utilizada. Puedes ampliar
  * la información o añadir métricas adicionales según sea necesario.
  * El catálogo reúne proyectos de ML, AI, Data y riesgo con enfoque reproducible.
+ * Actualizado con nuevos casos de estudio de operaciones, riesgo y gobernanza de IA.
  */
 
 export interface Project {
