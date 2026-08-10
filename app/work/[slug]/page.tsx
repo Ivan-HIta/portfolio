@@ -1,5 +1,6 @@
 import { projects } from '@/data/projects';
 import type { Project } from '@/data/projects';
+import { profile } from '@/data/profile';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 
@@ -32,11 +33,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
   // Tipo de assert para TypeScript: project no será undefined aquí
   const p = project as Project;
+  const repository = profile.work.find((w) => w.slug === p.slug)?.links?.code;
   return (
     <main className="mx-auto w-[min(1100px,92%)] py-16">
-      <a href="#work" className="underline text-sm text-zinc-400 hover:text-white">
-        ← Volver
-      </a>
+      <div className="flex flex-wrap items-center gap-3 text-sm">
+        <a href="/#work" className="text-zinc-400 underline underline-offset-4 hover:text-white">
+          ← Back to selected work
+        </a>
+        {repository ? (
+          <a
+            href={repository}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 font-semibold text-cyan-100 transition hover:border-cyan-200 hover:bg-cyan-300/20"
+          >
+            GitHub repository ↗
+          </a>
+        ) : null}
+      </div>
       <h1 className="text-3xl md:text-4xl font-extrabold mt-4">{p.title}</h1>
       <p className="text-zinc-400 mt-2 max-w-prose">{p.summary}</p>
 
