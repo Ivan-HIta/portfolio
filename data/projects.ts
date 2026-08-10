@@ -264,5 +264,101 @@ export const projects: Project[] = [
     "Risk Analytics",
     "Scenario Engine"
   ]
-}
+},
+  {
+    slug: "data-platform-observability",
+    title: "Data Platform Observability",
+    summary:
+      "Plataforma batch reproducible para ingestión incremental, contratos de datos, calidad, agregaciones analíticas y observabilidad operativa.",
+    context:
+      "Los equipos de negocio necesitan confiar en sus métricas y detectar fallas antes de que lleguen a reportes o modelos. El caso simula eventos operativos y los lleva desde una capa raw hasta agregados gold con evidencia de calidad.",
+    actions: [
+      "Generación de datos sintéticos con claves determinísticas y ejecución segura ante reruns.",
+      "Validación de esquema, nulos, duplicados, frescura, tipos y reglas de integridad antes de publicar la capa curated.",
+      "Separación bronze/silver/gold, métricas de calidad y dashboard Streamlit para operación.",
+      "Documentación de mapeo a object storage, Spark/Databricks, BigQuery/Snowflake, dbt, orquestación y Terraform.",
+      "Pruebas automatizadas, Docker y CI para convertir el pipeline en un activo mantenible."
+    ],
+    results: [
+      "Pipeline reproducible que hace visibles filas rechazadas, duplicados, nulos y frescura sin usar datos confidenciales.",
+      "Contrato de datos y arquitectura cloud-ready que conecta la experiencia existente en PySpark, Big Data y GCP/AWS con prácticas modernas de plataforma.",
+      "Demostración de cómo convertir una carga operativa en un producto de datos confiable para analítica, riesgo y ML."
+    ],
+    stack: [
+      "Python",
+      "pandas",
+      "Parquet",
+      "Streamlit",
+      "pytest",
+      "Docker",
+      "GitHub Actions",
+      "Terraform",
+      "Data Quality",
+      "Observability"
+    ]
+  },
+  {
+    slug: "financial-mlops-credit-risk",
+    title: "Financial MLOps Credit Risk Platform",
+    summary:
+      "Ciclo de vida gobernado para un modelo de riesgo crediticio sintético: entrenamiento reproducible, serving, monitoring, drift y retraining.",
+    context:
+      "Un modelo financiero no termina al obtener un AUC. Debe existir una ruta reproducible desde los datos y features hasta una API observable, un modelo card, umbrales explicables, revisión humana y rollback.",
+    actions: [
+      "Construcción de dataset sintético con variables financieras plausibles y split reproducible.",
+      "Entrenamiento calibrado, métricas de ROC AUC y average precision, artefacto versionado y model card.",
+      "API FastAPI con contrato de health, prediction y monitoring, además de validación de entradas.",
+      "Cálculo de PSI y estados stable/warning/critical para orientar alertas y retraining.",
+      "Documentación de MLflow/Vertex AI, registro de modelos, fairness, adverse-action controls y rollback."
+    ],
+    results: [
+      "Servicio reproducible que separa entrenamiento, serving y monitoring y deja trazabilidad de versión y threshold.",
+      "Evidencia de MLOps aplicable a credit risk, fraud y portfolio monitoring sin revelar información bancaria.",
+      "Base técnica para entrevistas de model serving, experiment tracking, drift, governance y diseño de ML systems."
+    ],
+    stack: [
+      "Python",
+      "scikit-learn",
+      "FastAPI",
+      "joblib",
+      "pytest",
+      "Docker",
+      "MLOps",
+      "Credit Risk",
+      "Model Monitoring",
+      "PSI"
+    ]
+  },
+  {
+    slug: "secure-enterprise-rag",
+    title: "Secure Enterprise RAG",
+    summary:
+      "Sistema RAG empresarial con citas, evaluación de retrieval, redacción de PII, controles contra prompt injection y telemetría de auditoría.",
+    context:
+      "La brecha entre conocer LLMs y operar AI en una empresa está en la confianza: una respuesta debe estar respaldada, medirse, respetar controles de acceso y fallar de forma segura cuando no existe evidencia.",
+    actions: [
+      "Indexación reproducible de documentos sintéticos con IDs, títulos y metadatos de fuente.",
+      "Evaluación offline con golden set, Recall@3 y MRR para detectar regresiones de retrieval.",
+      "Respuesta grounded con citas, fallback de evidencia insuficiente y versionado de prompt.",
+      "Bloqueo de patrones de prompt injection, redacción de PII y campos de latencia/costo/auditoría.",
+      "Threat model y arquitectura de evolución hacia vector search administrado y model gateway."
+    ],
+    results: [
+      "Demostración auditable de RAG que hace visible qué documento respaldó una respuesta.",
+      "Controles concretos de Responsible AI y seguridad que complementan la experiencia en datos, riesgo y ciberseguridad.",
+      "Evidencia de AI Engineering lista para discutir embeddings, vector stores, evaluation, guardrails, PII y cost control."
+    ],
+    stack: [
+      "Python",
+      "scikit-learn",
+      "FastAPI",
+      "TF-IDF Retriever",
+      "pytest",
+      "Docker",
+      "RAG Evaluation",
+      "Prompt Security",
+      "Responsible AI",
+      "Observability"
+    ]
+  }
 ];
