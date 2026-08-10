@@ -276,7 +276,7 @@ export const projects: Project[] = [
       "Generación de datos sintéticos con claves determinísticas y ejecución segura ante reruns.",
       "Validación de esquema, nulos, duplicados, frescura, tipos y reglas de integridad antes de publicar la capa curated.",
       "Separación bronze/silver/gold, métricas de calidad y dashboard Streamlit para operación.",
-      "Documentación de mapeo a object storage, Spark/Databricks, BigQuery/Snowflake, dbt, orquestación y Terraform.",
+      "Documentación de mapeo a object storage, Spark/Databricks, BigQuery/Snowflake, Airflow/Dagster, Kafka, dbt, Kubernetes y Terraform.",
       "Pruebas automatizadas, Docker y CI para convertir el pipeline en un activo mantenible."
     ],
     results: [
@@ -293,6 +293,10 @@ export const projects: Project[] = [
       "Docker",
       "GitHub Actions",
       "Terraform",
+      "Airflow (DAG)",
+      "dbt",
+      "Kafka Contract",
+      "Kubernetes",
       "Data Quality",
       "Observability"
     ]
@@ -309,7 +313,7 @@ export const projects: Project[] = [
       "Entrenamiento calibrado, métricas de ROC AUC y average precision, artefacto versionado y model card.",
       "API FastAPI con contrato de health, prediction y monitoring, además de validación de entradas.",
       "Cálculo de PSI y estados stable/warning/critical para orientar alertas y retraining.",
-      "Documentación de MLflow/Vertex AI, registro de modelos, fairness, adverse-action controls y rollback."
+      "Documentación de MLflow/Vertex AI, registro de modelos, retraining, Kubernetes, fairness, adverse-action controls y rollback."
     ],
     results: [
       "Servicio reproducible que separa entrenamiento, serving y monitoring y deja trazabilidad de versión y threshold.",
@@ -323,6 +327,11 @@ export const projects: Project[] = [
       "joblib",
       "pytest",
       "Docker",
+      "MLflow-style Registry",
+      "Retraining",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
       "MLOps",
       "Credit Risk",
       "Model Monitoring",
@@ -341,7 +350,7 @@ export const projects: Project[] = [
       "Evaluación offline con golden set, Recall@3 y MRR para detectar regresiones de retrieval.",
       "Respuesta grounded con citas, fallback de evidencia insuficiente y versionado de prompt.",
       "Bloqueo de patrones de prompt injection, redacción de PII y campos de latencia/costo/auditoría.",
-      "Threat model y arquitectura de evolución hacia vector search administrado y model gateway."
+      "Threat model, reranking, groundedness/citation coverage y arquitectura de evolución hacia vector search administrado, Kubernetes y model gateway."
     ],
     results: [
       "Demostración auditable de RAG que hace visible qué documento respaldó una respuesta.",
@@ -355,7 +364,11 @@ export const projects: Project[] = [
       "TF-IDF Retriever",
       "pytest",
       "Docker",
+      "Reranking",
+      "Groundedness",
+      "Citation Coverage",
       "RAG Evaluation",
+      "Kubernetes",
       "Prompt Security",
       "Responsible AI",
       "Observability"
