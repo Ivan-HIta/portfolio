@@ -4,6 +4,7 @@
  * corto, un resumen para tarjetas y secciones de contexto, acciones
  * realizadas, resultados y la pila tecnológica utilizada. Puedes ampliar
  * la información o añadir métricas adicionales según sea necesario.
+ * El catálogo reúne proyectos de ML, AI, Data y riesgo con enfoque reproducible.
  */
 
 export interface Project {
