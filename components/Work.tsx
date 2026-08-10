@@ -14,7 +14,7 @@ export default function Work() {
                 <div className="flex flex-1 flex-col p-5">
                   <div className="mb-4 flex items-center justify-between gap-3 text-xs uppercase tracking-[0.18em] text-cyan-200/80">
                     <span>{String(index + 1).padStart(2, '0')}</span>
-                    <span>Case study</span>
+                    <span>{w.flagship ? 'Flagship system' : 'Case study'}</span>
                   </div>
                   <h3 className="text-lg font-semibold leading-snug text-white">{w.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-zinc-400">{w.subtitle}</p>
