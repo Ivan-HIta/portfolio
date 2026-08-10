@@ -222,7 +222,7 @@ export const profile = {
       slug: "data-platform-observability",
       title: "Data Platform Observability",
       subtitle: "Incremental operational data platform with contracts, quality checks, curated analytics and production-ready observability",
-      tags: ["#DataEngineering", "#DataQuality", "#Observability", "#CloudArchitecture"],
+      tags: ["#DataEngineering", "#Airflow", "#dbt", "#Kafka", "#Kubernetes", "#DataQuality", "#Observability"],
       links: { code: "https://github.com/Ivan-HIta/data-platform-observability", demo: "" },
       flagship: true
     },
@@ -230,7 +230,7 @@ export const profile = {
       slug: "financial-mlops-credit-risk",
       title: "Financial MLOps Credit Risk Platform",
       subtitle: "Governed credit-risk model lifecycle with reproducible training, API serving, drift monitoring and retraining controls",
-      tags: ["#MLOps", "#CreditRisk", "#FastAPI", "#ModelMonitoring"],
+      tags: ["#MLOps", "#MLflow", "#Retraining", "#Kubernetes", "#Terraform", "#CreditRisk", "#ModelMonitoring"],
       links: { code: "https://github.com/Ivan-HIta/financial-mlops-credit-risk", demo: "" },
       flagship: true
     },
@@ -238,7 +238,7 @@ export const profile = {
       slug: "secure-enterprise-rag",
       title: "Secure Enterprise RAG",
       subtitle: "Enterprise retrieval system with citations, retrieval evaluation, PII redaction, prompt-injection controls and audit telemetry",
-      tags: ["#RAG", "#LLMEvaluation", "#ResponsibleAI", "#Security"],
+      tags: ["#RAG", "#Reranking", "#Groundedness", "#CitationCoverage", "#Kubernetes", "#LLMEvaluation", "#ResponsibleAI", "#Security"],
       links: { code: "https://github.com/Ivan-HIta/secure-enterprise-rag", demo: "" },
       flagship: true
     }
