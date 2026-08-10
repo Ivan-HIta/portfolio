@@ -1,0 +1,32 @@
+# Python environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test, coverage, notebook, and analysis caches
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environment configuration and local application state
+.env
+*.db
+*.sqlite
+*.sqlite3
+streamlit_app.log
+
+# Operating system and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build output (the deliberately created dist archive may remain tracked)
+build/
+*.egg-info/

@@ -1,0 +1,8 @@
+# Local, offline dependencies for the Streamlit demo and test suite.
+streamlit>=1.36
+pandas>=2.1
+numpy>=1.26
+plotly>=5.18
+sqlalchemy>=2.0
+pytest>=8.0
+openpyxl>=3.1
