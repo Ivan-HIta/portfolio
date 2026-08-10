@@ -169,7 +169,7 @@ export const profile = {
     "#Streamlit"
   ],
   "links": {
-    "code": "",
+    "code": "https://github.com/Ivan-HIta/ai-model-validation-governance-toolkit",
     "demo": ""
   }
 },
@@ -184,7 +184,7 @@ export const profile = {
     "#SQLite"
   ],
   "links": {
-    "code": "",
+    "code": "https://github.com/Ivan-HIta/ai-operations-workflow-copilot",
     "demo": ""
   }
 },
@@ -199,7 +199,7 @@ export const profile = {
     "#OperationalRisk"
   ],
   "links": {
-    "code": "",
+    "code": "https://github.com/Ivan-HIta/investment-operations-exception-monitor",
     "demo": ""
   }
 },
@@ -214,7 +214,7 @@ export const profile = {
     "#Python"
   ],
   "links": {
-    "code": "",
+    "code": "https://github.com/Ivan-HIta/portfolio-risk-scenario-analytics",
     "demo": ""
   }
 }
