@@ -157,7 +157,67 @@ export const profile = {
         "Modelo híbrido LLM + MLP para prevenir fraude sin afectar a clientes legítimos",
       tags: ["#LLM", "#MLP", "#FraudDetection", "#MLOps"],
       links: { code: "", demo: "" }
-    }
+    },
+{
+  "slug": "ai-model-validation-governance-toolkit",
+  "title": "AI Model Validation & Governance Toolkit",
+  "subtitle": "Offline workbench for model validation, LLM/RAG evaluation, bias, drift and governance evidence",
+  "tags": [
+    "#ModelGovernance",
+    "#LLMEvaluation",
+    "#scikit-learn",
+    "#Streamlit"
+  ],
+  "links": {
+    "code": "",
+    "demo": ""
+  }
+},
+{
+  "slug": "ai-operations-workflow-copilot",
+  "title": "AI Operations Workflow Copilot",
+  "subtitle": "Human-in-the-loop NLP copilot for operational triage, summaries and transparent next actions",
+  "tags": [
+    "#NLP",
+    "#TFIDF",
+    "#HumanInTheLoop",
+    "#SQLite"
+  ],
+  "links": {
+    "code": "",
+    "demo": ""
+  }
+},
+{
+  "slug": "investment-operations-exception-monitor",
+  "title": "Investment Operations Exception Monitor",
+  "subtitle": "Auditable exception triage, routing and SLA analytics for investment operations",
+  "tags": [
+    "#RulesEngine",
+    "#SLAAnalytics",
+    "#Streamlit",
+    "#OperationalRisk"
+  ],
+  "links": {
+    "code": "",
+    "demo": ""
+  }
+},
+{
+  "slug": "portfolio-risk-scenario-analytics",
+  "title": "Portfolio Risk & Scenario Analytics",
+  "subtitle": "Exposure, concentration, historical risk metrics and deterministic stress testing",
+  "tags": [
+    "#RiskAnalytics",
+    "#StressTesting",
+    "#ScenarioAnalysis",
+    "#Python"
+  ],
+  "links": {
+    "code": "",
+    "demo": ""
+  }
+}
   ],
 
   /**
