@@ -1,0 +1,32 @@
+# Python environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test, coverage, notebook, and analysis caches
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local configuration and generated state
+.env
+*.db
+*.sqlite
+*.sqlite3
+streamlit_app.log
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build folders (the intentional dist archive may remain tracked)
+build/
+*.egg-info/
