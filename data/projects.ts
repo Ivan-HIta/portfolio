@@ -118,6 +118,124 @@ export const projects: Project[] = [
       "Entrenamiento de un modelo BETO (BERT en español) para clasificación de sentimientos (positivo, neutro, negativo) y detección de promesas de pago.",
       "Integración con variables estructuradas (saldo pendiente, días de atraso, segmento socioeconómico) para alimentar un modelo secundario de predicción de pago.",
       "Implementación de pipeline MLOps en AWS con retraining mensual, marco champion–challenger y monitoreo de drift de vocabulario.",
+
+  {
+    "slug": "ai-model-validation-governance-toolkit",
+    "title": "AI Model Validation & Governance Toolkit",
+    "summary": "Workbench offline para validar modelos de clasificación, evaluar respuestas LLM/RAG y convertir métricas de sesgo, estabilidad y drift en evidencia de gobernanza.",
+    "context": "En entornos financieros y empresariales de alta responsabilidad, el rendimiento predictivo por sí solo no basta: también se necesita evidencia reproducible sobre calidad, estabilidad, diferencias entre segmentos, límites de uso y monitoreo. Este proyecto simula ese proceso con datos sintéticos y mantiene la revisión humana como control.",
+    "actions": [
+      "Generación y documentación de datasets sintéticos para un clasificador binario y pares de evaluación LLM/RAG.",
+      "Entrenamiento y comparación de regresión logística y Random Forest con holdout, ROC AUC, matriz de confusión, calibración, umbrales y lift por deciles.",
+      "Cálculo de recall, FPR y FNR por región, segmento, edad e ingreso para identificar patrones que requieren investigación.",
+      "Implementación de indicadores de estabilidad y drift tipo PSI, además de controles transparentes de cobertura de conceptos, relevancia y posibles omisiones en respuestas LLM.",
+      "Generación de model cards en Markdown, dashboard de gobernanza, checklist de aprobación y suite de pruebas offline."
+    ],
+    "results": [
+      "Paquete trazable de evidencia de validación, sesgo, estabilidad, drift y evaluación LLM en una sola aplicación.",
+      "Arquitectura modular y reproducible que separa generación de datos, entrenamiento, métricas, visualización y artefactos de gobernanza.",
+      "Demostración explícita de límites, supervisión humana y controles pendientes antes de cualquier uso productivo."
+    ],
+    "stack": [
+      "Python",
+      "Streamlit",
+      "scikit-learn",
+      "pandas",
+      "Plotly",
+      "pytest",
+      "Model Governance",
+      "LLM Evaluation"
+    ]
+  },
+  {
+    "slug": "ai-operations-workflow-copilot",
+    "title": "AI Operations Workflow Copilot",
+    "summary": "Copiloto con NLP, reglas de negocio y revisión humana para clasificar tickets operativos, resumir incidencias y recomendar próximas acciones.",
+    "context": "Los equipos de operaciones financieras reciben excepciones y solicitudes que deben priorizarse con rapidez y consistencia. El proyecto simula una asistencia explicable que mantiene la decisión final en manos de un analista y deja una trazabilidad local de sus revisiones.",
+    "actions": [
+      "Carga y validación de tickets sintéticos o CSV del usuario con documentación del contrato de datos.",
+      "Clasificación de categorías mediante TF-IDF y regresión logística, con accuracy, precision, recall, F1, matriz de confusión y ejemplos de error.",
+      "Generación de resúmenes extractivos y fallback determinista sin API, junto con recomendaciones de siguiente acción basadas en reglas transparentes.",
+      "Flujo human-in-the-loop para aceptar, rechazar o ajustar la propuesta de IA y persistir comentarios y decisiones en SQLite.",
+      "Dashboard de beneficios con tiempo de triage, ahorro estimado, riesgo de incumplimiento de SLA y validación del modelo."
+    ],
+    "results": [
+      "Flujo completo de triage asistido que conecta inferencia, recomendación, revisión humana, auditoría y medición de beneficios.",
+      "Separación clara entre predicción probabilística y reglas operativas controladas, facilitando revisión y pruebas.",
+      "Demo local reproducible, sin credenciales ni datos confidenciales, con pruebas unitarias y documentación de limitaciones."
+    ],
+    "stack": [
+      "Python",
+      "Streamlit",
+      "scikit-learn",
+      "TF-IDF",
+      "SQLite",
+      "SQLAlchemy",
+      "Plotly",
+      "pytest",
+      "Human-in-the-loop AI"
+    ]
+  },
+  {
+    "slug": "investment-operations-exception-monitor",
+    "title": "Investment Operations Exception Monitor",
+    "summary": "Monitor de excepciones de operaciones de inversión con validación de datos, triage determinista, routing, SLA analytics y dashboard auditable.",
+    "context": "Las operaciones de inversión gestionan breaks de reconciliación, confirmaciones faltantes, diferencias de precio, incidencias contables y liquidaciones fallidas. El valor del proyecto está en convertir una lista de excepciones en un flujo controlable de calidad, prioridad, responsable y riesgo de vencimiento.",
+    "actions": [
+      "Validación de esquema y registros sintéticos: campos faltantes, duplicados, fechas inválidas, importes negativos y estados inesperados.",
+      "Motor de reglas explicable para calcular prioridad, severidad, equipo responsable, riesgo SLA y causa raíz de respaldo.",
+      "Monitoreo de fechas objetivo, excepciones vencidas, elementos en riesgo, tiempo restante y puntualidad de resolución.",
+      "Dashboards de volumen, severidad, tipo de excepción, carga por equipo, exposición SLA y causas recurrentes.",
+      "Carga CSV, módulos reutilizables, pruebas unitarias y documentación de controles, alcance y límites."
+    ],
+    "results": [
+      "Flujo auditable desde la ingestión hasta el triage, routing y monitoreo de SLA.",
+      "Reglas de decisión visibles y testeables que pueden ser desafiadas durante una revisión operativa.",
+      "Vista de gestión orientada a priorizar excepciones de mayor impacto sin automatizar cierres ni sustituir aprobaciones."
+    ],
+    "stack": [
+      "Python",
+      "Streamlit",
+      "pandas",
+      "NumPy",
+      "Plotly",
+      "SQLAlchemy",
+      "pytest",
+      "Rules Engine",
+      "SLA Analytics"
+    ]
+  },
+  {
+    "slug": "portfolio-risk-scenario-analytics",
+    "title": "Portfolio Risk & Scenario Analytics",
+    "summary": "Aplicación de analítica de exposición, concentración, métricas históricas de riesgo y escenarios deterministas sobre un portafolio sintético.",
+    "context": "Una tabla de posiciones no basta para entender concentración, calidad de datos, comportamiento histórico ni sensibilidad ante shocks. Este proyecto construye una ruta transparente desde la validación de holdings y precios hasta la analítica de riesgo y escenarios, sin utilizar datos de mercado reales.",
+    "actions": [
+      "Validación de holdings y precios sintéticos: campos requeridos, missingness, precios inválidos, duplicados, valores negativos y conciliación aproximada de pesos.",
+      "Cálculo de valor de mercado, exposiciones por clase de activo, sector, región y moneda, además de concentración y HHI.",
+      "Construcción de retornos diarios y cálculo de volatilidad, volatilidad anualizada, drawdown máximo, VaR histórico, CVaR, Sharpe y sensibilidad tipo beta.",
+      "Ejecución de escenarios explicables de equity, tasas, moneda, sector, mercados emergentes y shocks personalizados.",
+      "Dashboards y reportes para comparar valor base, valor estresado, impacto por holding y grupos de exposición."
+    ],
+    "results": [
+      "Cadena reproducible de validación, exposición, riesgo histórico y stress testing sobre datos completamente sintéticos.",
+      "Métricas y supuestos documentados para facilitar la revisión técnica y de negocio.",
+      "Demostración de analítica de riesgo sin ejecutar operaciones, emitir recomendaciones de inversión ni sustituir controles especializados."
+    ],
+    "stack": [
+      "Python",
+      "Streamlit",
+      "pandas",
+      "NumPy",
+      "SciPy",
+      "Plotly",
+      "pytest",
+      "Risk Analytics",
+      "Scenario Engine"
+    ]
+  }
+
+,
       "Iteración continua: incorporación de embeddings contextuales cuando se detectó deterioro de AUC en 2025."
     ],
     results: [
